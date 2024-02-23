@@ -3,23 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Mi Primer Sitio Web</title>
   </head>
   <body>
     <header>
-      <h1>NBA</h1>
+      <div id="encabezado">
+        <h1 id="Titulo">NBA</h1>
+        <h2 id="Subtitulo">National Basketball Association</h2>
+      </div>
     </header>
     <main>
-      <h3>
-        EN esta página puede ver los mayores anotadores de la NBA de todos los
+      <h3 class="espaciado">
+        En esta página puede ver los mayores anotadores de la NBA de todos los
         tiempos en general y no oriundos de los Estados Unidos. La información
         está actualizada hasta enero de 2022.
       </h3>
-      <section id="inicio">
-        <a href="#engeneral"><h2>Mayores anotadores en general</h2></a>
-        <a href="#extranjeros"><h2>Mayores anotadores extranjeros</h2></a>
+      <section class="espaciado" id="inicio">
+        <div class="logos">
+          <a href="#engeneral">
+            <img class="logos-categorias" src="./img/NBA-Logo.png" alt="" />
+          </a>
+        </div>
+        <div class="logos">
+          <a href="#extranjeros"
+            ><img
+              class="logos-categorias"
+              src="./img/NBA-Logo-World.png"
+              alt=""
+          /></a>
+        </div>
       </section>
-      <section id="engeneral">
+      <section class="espaciado" id="engeneral">
         <h3>En general:</h3>
         <ol>
           <li><h4>Kareem Abdul-Jabbar - 38,387 puntos</h4></li>
@@ -44,7 +59,7 @@
           <li><h4>Paul Pierce - 26,397 puntos</h4></li>
         </ol>
       </section>
-      <section id="extranjeros">
+      <section class="espaciado" id="extranjeros">
         <h3>Extranjeros:</h3>
         <ol>
           <li><h4>Dirk Nowitzki (Alemania) - 31,560 puntos</h4></li>
@@ -100,7 +115,9 @@
           </li>
         </ol>
       </section>
-      <a href="#inicio">Inicio</a>
+      <a id="texto-boton" href="#encabezado"
+        ><div id="boton-inicio"><p>Inicio</p></div></a
+      >
     </main>
   </body>
 </html>
